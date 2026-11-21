@@ -1,61 +1,42 @@
 # Global Supplier Vetting & Fulfillment SOP
-## Primary Sourcing Channel: CJdropshipping (Alternative: AliExpress + DSers)
+## Verified Sourcing Partner: CJdropshipping
 
-This Standard Operating Procedure ensures zero-cost setup, reliable 5–10 day transit to Tier-1 destinations, and protection against customer disputes and payment gateway holds.
-
----
-
-## 1. Zero-Cost Supplier Setup Protocol (CJdropshipping)
-
-1. **Account Registration ($0):** Register an account on [CJdropshipping.com](https://cjdropshipping.com) using your primary business email.
-2. **Authorize Storefront:**
-   * **Shopify:** Navigate to `Authorization` -> `Shopify` -> Add Store Domain -> Install the free CJdropshipping App.
-   * **Custom / WooCommerce / Manual:** Navigate to `Authorization` -> `API Settings` -> Copy API Key & Secret for automated webhook dispatch.
-3. **Product Search & Variant Sourcing:**
-   * Search terms: `Electric scalp massager oil applicator`, `Red light scalp applicator`, `Liquid guide comb`.
-   * Look for factory listings with:
-     * Minimum 10,000+ units in factory stock.
-     * Supplier response score > 4.5/5.0.
-     * Material specification: Medical-grade silicone / alloy teeth + ABS shell (BPA free).
-     * Certified CE, FCC, RoHS compliance marking.
+> **Verified Hero Product SKU:** `CJYD202048201AZ`  
+> **Supplier Name:** PREMIUMGOODS Global Limited (Rating: 4.9 / 5.0 Stars | 0 Disputes)  
+> **Product Title:** Scalp Medicine Supplying Device Head Essential Roll-out Massage Comb  
+> **Verified Unit Economics:** $6.47 Product Fee + $7.48 Express Shipping = **$13.95 USD Landed COGS** (~₹1,185 INR)  
+> **Retail Price:** $39.99 USD (~₹3,400 INR) | **Net Profit per Unit:** ~$21.38 USD (~₹1,820 INR)
 
 ---
 
-## 2. Shipping Line Selection Matrix (Crucial for US/UK/CA/AU)
+## 1. Verified Hardware Specification
 
-Because the comb contains a small rechargeable lithium battery (500mAh) and optical LED diodes, it falls under the **"Sensitive / Built-in Battery"** shipping classification. You must select specific couriers that handle electronic cargo without customs hold-ups:
+The product sourced under SKU `CJYD202048201AZ` includes the full 3-in-1 feature set configured for the FolliRoot™ brand:
+1. **Red Light Therapy (RLT):** 630nm–650nm optical LED array positioned directly along the central tooth line to irradiate the scalp surface during application.
+2. **Liquid Reservoir Chamber:** Transparent graduated chamber (with ml measurements) allowing touchless application of Minoxidil, Rosemary oil, or peptide serums.
+3. **Roll-Out Massage Teeth:** Precision metallic roller-ball teeth that dispense fluid only upon scalp contact without leakage.
+4. **EMS Microcurrent & Sonic Vibration:** Dual-mode electro-stimulation and vibration to promote micro-circulation and dermal absorption.
+5. **Leak-Proof Stand Cap:** Protective silicone base cap included in package.
 
-| Destination Country | Recommended Shipping Line | Typical Transit Time | Tracking Provider (Synced to Gateway) |
-| :--- | :--- | :--- | :--- |
-| **United States** | **CJPacket Sensitive** or **USPS Special Line** | 6–10 Business Days | Last-mile handled by USPS (Domestic US tracking number) |
-| **United Kingdom** | **CJPacket Fast Line** or **Royal Mail Line** | 5–8 Business Days | Last-mile handled by Royal Mail UK |
-| **Canada** | **Canada Post Special Line** | 8–12 Business Days | Canada Post tracked |
-| **Australia** | **Australia Express / CJ Packet AU** | 6–9 Business Days | Australia Post tracked |
+---
 
-> **IMPORTANT RULE:** Never select "China Post Ordinary Small Packet" or "ePacket untracked". Untracked lines cause PayPal to extend payout holds to 60+ days and result in immediate chargebacks.
+## 2. Supplier Setup & Linking SOP (CJdropshipping)
+
+1. **Locate Verified SKU:**
+   * In CJdropshipping search bar: Enter SKU `CJYD202048201AZ`.
+   * Supplier: `PREMIUMGOODS Global Limited`.
+2. **Click "Connect" or "List":**
+   * If connecting to custom storefront: Use Webhook / API authorization.
+   * If using Shopify ($1 trial): Click "Connect" -> select your store.
+3. **Shipping Line Setting:**
+   * Destination: United States
+   * Courier: **CJPacket Sensitive** ($7.48, 7–10 Business Days with USPS last-mile tracking).
+   * Classification: Built-in lithium battery & sensitive electronics approved.
 
 ---
 
 ## 3. White-Label & Packaging Guidelines (Zero Chinese Invoices)
 
-1. **Custom Note / Shipping Agreement:** In CJdropshipping Dashboard -> `My CJ` -> `Store Settings` -> `Packaging / Notes`:
+1. In CJdropshipping Dashboard -> `My CJ` -> `Store Settings` -> `Packaging / Notes`:
    * Set default setting: *"Dropshipping order: Do NOT include any Chinese invoices, price tags, manufacturer contacts, or marketing flyers in the shipping package."*
-2. **Customized Thank You Card ($0.02 - Optional Scale Add-on):**
-   * CJ allows uploading a custom 4x6 inch digital card (printed for $0.02/unit) featuring:
-     * Brand logo
-     * Quick-start instructions (How to fill the tank, charging safety)
-     * VIP customer support email (`support@yourbrand.com`)
-     * 15% discount code for their next order (`THANKYOU15`)
-
----
-
-## 4. Defective Unit & Return Policy SOP
-
-* **Supplier Return Guarantee:** CJdropshipping offers a free reshipment or full refund if:
-  1. The tracking shows no movement for >15 days.
-  2. The customer sends a 5-second video showing the product won't power on or charge.
-* **Customer Dispute Resolution Flow:**
-  1. Never ask a US customer to ship a defective $13.50 item back to China or India (return shipping would cost $25+).
-  2. Request a brief photo/video of the defect from the customer.
-  3. Submit a ticket on CJdropshipping with the customer's proof -> CJ issues a replacement order or full credit within 24 hours.
-  4. Apologize to the customer and inform them: *"We have dispatched a brand new replacement unit free of charge with expedited tracking."* (Transforms a dissatisfied customer into a raving 5-star brand advocate).
+2. Tracking sync: As soon as CJPacket scans the package, sync the domestic USPS tracking number to PayPal and Razorpay via our automated webhook or manual daily paste to release rolling holds in 7 days.
