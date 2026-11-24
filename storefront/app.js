@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3. Thumbnail Gallery Switcher
+  // 3. Thumbnail Gallery Switcher with Smooth Cross-Fade
   const thumbnails = document.querySelectorAll('.thumbnail-item');
   const mainImage = document.getElementById('main-product-img');
   thumbnails.forEach(thumb => {
@@ -36,8 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
       thumbnails.forEach(t => t.classList.remove('active'));
       thumb.classList.add('active');
       const newSrc = thumb.getAttribute('data-img');
-      if (newSrc && mainImage) {
-        mainImage.setAttribute('src', newSrc);
+      if (newSrc && mainImage && mainImage.getAttribute('src') !== newSrc) {
+        mainImage.style.opacity = '0.4';
+        setTimeout(() => {
+          mainImage.setAttribute('src', newSrc);
+          mainImage.style.opacity = '1';
+        }, 120);
       }
     });
   });
