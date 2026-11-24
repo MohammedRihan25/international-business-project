@@ -1,7 +1,7 @@
 # SESSION CHECKPOINT
-**Last Saved:** November 22, 2026 | 00:59 IST  
+**Last Saved:** November 24, 2026 | 22:00 IST  
 **Project:** Global Dropship HQ (FolliRoot™ Labs)  
-**Location:** C:\Users\DELL\Projects\project-51\global-dropship-hq  
+**Location:** C:\Users\muham\Documents\jarvis\job-hunter  
 **GitHub Repository:** https://github.com/MohammedRihan25/international-business-project.git  
 
 ---
@@ -14,14 +14,20 @@
    - **Hardware Specs:** 3-in-1 Red Light Therapy (650nm) + EMS Microcurrent + Measured Liquid Tank with Roll-Out Dispensing Teeth + Sonic Vibration + Silicone Stand Cap.
    - **Verified Landed Cost:** **$13.95 USD** ($6.47 Product Fee + $7.48 Express Air Shipping via `CJPacket Sensitive`).
    - **Unit Economics:** Selling Price: **$39.99 USD** | Net Take-Home Cash Profit: **~$21.38 USD (~₹1,820 INR)** per order (**54% Net Margin**).
-2. **Operational & Capital Roadmap Documented:**
+2. **Real Product Assets & Video Fully Integrated:**
+   - Imported all 7 high-resolution product photos from `D:\CJ IMAGES` into `storefront/assets/images/`.
+   - Replaced SVG vector mockup with real photography and an interactive 7-angle thumbnail switcher with smooth cross-fade animation.
+   - Imported 1080p supplier demonstration video (`video_b0ea...mp4`) from `D:\CJ VIDEOS` into `storefront/assets/videos/product-demo.mp4`.
+   - Created a dedicated **"See FolliRoot™ In Action"** video showcase section with autoplay/loop/controls and trust metric badges.
+   - Enhanced OpenGraph and Twitter card metadata with real photography for viral social shares.
+3. **Operational & Capital Roadmap Documented:**
    - Detailed blueprint in `/strategy/how-it-works-and-startup-capital-guide.md` covering the 5-step order lifecycle, Tier-1 prepaid advantages, ₹0–₹900 fixed setup costs, ₹3k–₹5k float runway, and the 45-day Indian credit card float strategy.
-3. **Workspace Intelligence Architecture Active:**
-   - Full co-founder persona, execution rules, and automatic GitHub sync protocol embedded into `AGENTS.md` and `GEMINI.md`. Any machine opening this repo with `agy` immediately picks up the exact same context and way of thinking.
-4. **Turnkey DTC Storefront Ready:**
+4. **Workspace Intelligence Architecture Active:**
+   - Full co-founder persona, execution rules, and automatic GitHub sync protocol embedded into `AGENTS.md` and `GEMINI.md`.
+5. **Turnkey DTC Storefront Ready:**
    - Mobile-first landing page (`storefront/index.html`, `styles.css`, `app.js`).
    - 5 turnkey compliance HTML legal pages in `/storefront/legal` (Privacy Policy, Terms of Service, Shipping Policy, Refund Policy, Contact Us).
-5. **Marketing & Automation Ready:**
+6. **Marketing & Automation Ready:**
    - 30-day organic video calendar, 15 viral hook scripts, and Pinterest SEO templates in `/marketing`.
    - Dynamic profit & float CLI calculator in `/automation/profit_cashflow_calculator.py`.
 
