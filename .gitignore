@@ -3,8 +3,9 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
-# Node / Python
+# Node / Python / Deploy
 node_modules/
 __pycache__/
 *.pyc
 .env
+.netlify/

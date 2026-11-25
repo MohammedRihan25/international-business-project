@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FolliRoot™ 3-in-1 Red Light Scalp & Serum Comb | Touchless Follicle Tech</title>
-  <meta name="description" content="Micro-dose rosemary oils and hair density serums directly to your follicles with clinical 650nm red light phototherapy and soothing scalp massage. Zero greasy hands. Free 5-7 day US & UK tracked delivery.">
+  <title>FolliRoot™ 3-in-1 Red Light Scalp & Serum Comb | Clinical Touchless Follicle Tech</title>
+  <meta name="description" content="Micro-dose rosemary oils and hair density serums directly to your follicles with clinical 650nm red light phototherapy and 10,000 RPM sonic scalp massage. Zero greasy hands. Free 5-7 day US & UK tracked delivery.">
   
-  <!-- Open Graph & Schema for Pinterest Rich Pins -->
+  <!-- Open Graph & Schema -->
   <meta property="og:title" content="FolliRoot™ 3-in-1 Red Light Scalp Massager & Serum Applicator">
   <meta property="og:description" content="Touchless scalp oiling with medical-grade 650nm red light phototherapy. Free US/UK tracked delivery.">
   <meta property="og:type" content="product">
@@ -18,291 +18,452 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="assets/images/product-1.jpg">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Announcement Bar -->
+  <!-- Ambient Background Light Beams -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+
+  <!-- Announcement Bar with Marquee Pulse -->
   <div class="announcement-bar">
-    ✨ SPRING WELLNESS SALE: 40% OFF + FREE 5–7 DAY US & UK TRACKED SHIPPING
+    <div class="announcement-content">
+      <span class="announcement-badge">FLASH SALE</span>
+      <span class="announcement-text">40% OFF SPRING WELLNESS ACCESS + FREE 5–7 DAY US & UK PRIORITY TRACKED SHIPPING</span>
+      <span class="announcement-ticker">⚡ LIMITED BATCH DISPATCH</span>
+    </div>
   </div>
 
   <!-- Header Navigation -->
-  <nav class="navbar">
-    <a href="#" class="brand-logo">FolliRoot Labs</a>
-    <div class="nav-badges">
-      <span>🌿 100% Touchless</span>
-      <span>🇺🇸 Fast US Delivery</span>
-    </div>
-  </nav>
+  <header class="navbar-wrapper">
+    <nav class="navbar">
+      <a href="#" class="brand-logo">
+        <span class="logo-mark">🌿</span>
+        <span class="logo-text">FolliRoot<span class="logo-accent">™</span> <span class="logo-sub">LABS</span></span>
+      </a>
+      <div class="nav-badges">
+        <span class="nav-pill"><span class="pill-dot"></span> 100% Touchless</span>
+        <span class="nav-pill">🇺🇸 USPS Tracked Delivery</span>
+      </div>
+      <a href="#main-cta-btn" class="nav-cta-btn">Order Now</a>
+    </nav>
+  </header>
 
   <!-- Product Hero Container -->
   <main class="container">
     <section class="product-hero">
       
-      <!-- Left Column: Visual Gallery -->
+      <!-- Left Column: Visual Gallery with Red Light Breathing Aura -->
       <div class="gallery-container">
-        <div class="main-image-wrap">
-          <span class="product-hero-badge">Viral Density Tech</span>
+        <div class="main-image-wrap" id="main-image-wrap">
+          <!-- Dynamic Aura Rings behind product -->
+          <div class="red-light-aura" id="red-light-aura"></div>
+          <div class="red-light-ripple"></div>
+          
+          <div class="product-hero-badge" id="product-mode-badge">
+            <span class="badge-dot pulse-red"></span>
+            <span id="badge-text">650nm Red Light Active</span>
+          </div>
+
+          <span class="magnify-hint">Hover to Inspect</span>
           <img id="main-product-img" src="assets/images/product-1.jpg" alt="FolliRoot™ 3-in-1 Red Light Scalp Massager & Touchless Serum Applicator Comb" class="main-product-img" />
+          
+          <!-- Laser Beam Sweep Overlay on Hover -->
+          <div class="laser-beam-sweep"></div>
         </div>
 
+        <!-- 7-Angle Thumbnail Switcher -->
         <div class="thumbnail-row">
-          <div class="thumbnail-item active" data-img="assets/images/product-1.jpg" title="Hero Overview">
+          <button class="thumbnail-item active" data-img="assets/images/product-1.jpg" title="Hero Overview" aria-label="Hero Overview">
             <img src="assets/images/product-1.jpg" alt="Hero Overview">
-          </div>
-          <div class="thumbnail-item" data-img="assets/images/product-2.jpg" title="Red Light Phototherapy">
+          </button>
+          <button class="thumbnail-item" data-img="assets/images/product-2.jpg" title="Red Light Phototherapy" aria-label="Red Light Phototherapy">
             <img src="assets/images/product-2.jpg" alt="Red Light Phototherapy">
-          </div>
-          <div class="thumbnail-item" data-img="assets/images/product-3.jpg" title="Touchless In-Hand Scalp Application">
+          </button>
+          <button class="thumbnail-item" data-img="assets/images/product-3.jpg" title="Touchless In-Hand Scalp Application" aria-label="Touchless Scalp Application">
             <img src="assets/images/product-3.jpg" alt="Touchless Scalp Application">
-          </div>
-          <div class="thumbnail-item" data-img="assets/images/product-4.jpg" title="Roll-Out Dispenser & Teeth">
+          </button>
+          <button class="thumbnail-item" data-img="assets/images/product-4.jpg" title="Roll-Out Dispenser & Teeth" aria-label="Roll-Out Dispenser">
             <img src="assets/images/product-4.jpg" alt="Roll-Out Dispenser">
-          </div>
-          <div class="thumbnail-item" data-img="assets/images/product-5.jpg" title="Ergonomic Grip & Reservoir">
+          </button>
+          <button class="thumbnail-item" data-img="assets/images/product-5.jpg" title="Ergonomic Grip & Reservoir" aria-label="Ergonomic Design">
             <img src="assets/images/product-5.jpg" alt="Ergonomic Design">
-          </div>
-          <div class="thumbnail-item" data-img="assets/images/product-6.jpg" title="Product Architecture">
+          </button>
+          <button class="thumbnail-item" data-img="assets/images/product-6.jpg" title="Product Architecture" aria-label="Product Architecture">
             <img src="assets/images/product-6.jpg" alt="Product Architecture">
-          </div>
-          <div class="thumbnail-item" data-img="assets/images/product-7.jpg" title="Clinical Performance Specs">
+          </button>
+          <button class="thumbnail-item" data-img="assets/images/product-7.jpg" title="Clinical Performance Specs" aria-label="Performance Specs">
             <img src="assets/images/product-7.jpg" alt="Performance Specs">
-          </div>
+          </button>
         </div>
       </div>
 
       <!-- Right Column: Product Information & Checkout -->
       <div class="product-details">
         
+        <!-- Social Proof Star Rating with Kinetic Counter -->
         <div class="rating-row">
-          <span class="stars">★★★★★</span>
-          <span style="font-weight: 700; color: var(--primary);">4.94/5</span>
-          <span class="reviews-count">(1,248 Verified US/UK Reviews)</span>
+          <div class="stars-outer">
+            <span class="stars">★★★★★</span>
+          </div>
+          <span class="score-badge">4.94 / 5.0</span>
+          <span class="reviews-count">(<span class="count-up" data-target="1248">1,248</span> Verified US/UK Reviews)</span>
         </div>
 
-        <h1 class="product-title">3-in-1 Red Light Scalp Massager & Touchless Serum Applicator</h1>
-        <p class="product-subtitle">Direct root-level micro-dosing with clinical 650nm phototherapy and high-frequency massage.</p>
+        <!-- React Bits Blur-Reveal Animated Headline -->
+        <h1 class="product-title blur-reveal-text">
+          <span>3-in-1</span> <span>Red</span> <span>Light</span> <span>Scalp</span> <span>Massager</span> <span>&</span> <span>Touchless</span> <span>Serum</span> <span>Applicator</span>
+        </h1>
+        
+        <p class="product-subtitle">
+          Direct root-level micro-dosing engineered with clinical 650nm phototherapy and 10,000 RPM sonic follicle stimulation.
+        </p>
 
-        <div class="pricing-row">
-          <span class="current-price">$39.99</span>
-          <span class="original-price">$69.99</span>
-          <span class="discount-tag">SAVE 43% TODAY</span>
+        <!-- Pricing Row with Real-Time Savings Pill -->
+        <div class="pricing-card">
+          <div class="pricing-main">
+            <span class="current-price">$39.99</span>
+            <span class="original-price">$69.99</span>
+          </div>
+          <div class="pricing-pill">
+            <span class="pill-sparkle">✨</span>
+            <span>YOU SAVE $30.00 (43% OFF)</span>
+          </div>
+        </div>
+
+        <!-- Interactive 3-in-1 Treatment Mode Switcher -->
+        <div class="mode-selector-block">
+          <span class="selector-title">EXPLORE 3 INTEGRATED THERAPY MODES:</span>
+          <div class="mode-pill-row">
+            <button class="mode-btn active" data-mode="redlight">
+              <span class="mode-icon">🔴</span>
+              <span class="mode-text">650nm Red Light</span>
+            </button>
+            <button class="mode-btn" data-mode="sonic">
+              <span class="mode-icon">⚡</span>
+              <span class="mode-text">10,000 RPM Sonic</span>
+            </button>
+            <button class="mode-btn" data-mode="touchless">
+              <span class="mode-icon">💧</span>
+              <span class="mode-text">Roll-Out Dispenser</span>
+            </button>
+          </div>
+          <div class="mode-description-box" id="mode-desc">
+            <strong>🔴 Medical-Grade 650nm Diode Array:</strong> Emits targeted photonic wavelengths directly to dermal papilla, energizing cellular mitochondria and awakening sluggish follicles without scalp heat.
+          </div>
         </div>
 
         <!-- Dynamic Delivery & Scarcity Card -->
         <div class="delivery-estimate-card">
           <div class="stock-indicator">
             <span class="pulse-dot"></span>
-            <span>High Demand: Only 4 units remaining in current batch</span>
+            <span>High Demand: Only <strong class="stock-num">4 units</strong> remaining in today's US priority dispatch</span>
           </div>
-          <div>
-            🚚 <strong>FREE Priority Delivery:</strong> Arrives between <span id="dynamic-delivery-date" style="color: var(--primary); text-decoration: underline;">Oct 28 – Nov 01</span> via USPS / Royal Mail.
+          <div class="delivery-date-row">
+            <span class="truck-icon">🚚</span>
+            <span><strong>FREE Priority Express:</strong> Arrives between <span id="dynamic-delivery-date" class="delivery-highlight">Loading dates...</span> via USPS / Royal Mail.</span>
           </div>
         </div>
 
-        <!-- Problem / Feature Checkpoints -->
+        <!-- Problem / Feature Checkpoints with Animated Check Icons -->
         <ul class="feature-checklist">
-          <li><span class="check-icon">✓</span> <strong>Zero Greasy Hands:</strong> 6ml clear reservoir dispenses only when gently pressed to roots.</li>
-          <li><span class="check-icon">✓</span> <strong>650nm Red Light Phototherapy:</strong> Awakens dormant hair bulbs and boosts cellular ATP.</li>
-          <li><span class="check-icon">✓</span> <strong>10,000 RPM Micro-Vibrations:</strong> Relaxes scalp tension & boosts serum absorption by 3x.</li>
-          <li><span class="check-icon">✓</span> <strong>IPX5 100% Waterproof:</strong> 5-second rinse under warm sink water between oils.</li>
-          <li><span class="check-icon">✓</span> <strong>30-Day Money-Back Guarantee:</strong> Try it risk-free for 30 nights.</li>
+          <li>
+            <span class="check-glow">✓</span>
+            <div><strong>Zero Greasy Hands:</strong> 6ml clear sealed reservoir dispenses liquid exclusively when precision teeth contact roots.</div>
+          </li>
+          <li>
+            <span class="check-glow">✓</span>
+            <div><strong>650nm Red Light Phototherapy:</strong> Clinical cellular excitation wakes up dormant hair bulbs for denser baseline growth.</div>
+          </li>
+          <li>
+            <span class="check-glow">✓</span>
+            <div><strong>10,000 RPM Micro-Vibrations:</strong> Relieves scalp tension, unclogs micro-channels, and boosts serum absorption by 300%.</div>
+          </li>
+          <li>
+            <span class="check-glow">✓</span>
+            <div><strong>IPX5 100% Rinse-Clean:</strong> 5-second rinse under warm sink water between rosemary, minoxidil, or peptide oils.</div>
+          </li>
+          <li>
+            <span class="check-glow">✓</span>
+            <div><strong>30-Night Money-Back Guarantee:</strong> Noticeable scalp revitalization or receive a full prompt refund.</div>
+          </li>
         </ul>
 
-        <!-- Primary Call to Action -->
+        <!-- Shimmering Magnetic Call to Action Button -->
         <button id="main-cta-btn" class="cta-button trigger-checkout">
-          <span>GET YOUR 3-IN-1 COMB NOW</span>
-          <span>→</span>
+          <span class="cta-shine"></span>
+          <span class="cta-label">CLAIM YOUR 3-IN-1 COMB NOW</span>
+          <span class="cta-arrow">→</span>
         </button>
 
-        <!-- Trust Badges -->
+        <!-- Trust Badges with Micro-Icons -->
         <div class="trust-badges-strip">
-          <div>🛡️ 30-Day Guarantee</div>
-          <div>✈️ Free US/UK Shipping</div>
-          <div>🔒 256-Bit SSL Encrypted</div>
+          <div class="trust-item">
+            <span class="trust-icon">🛡️</span>
+            <span>30-Day Guarantee</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">✈️</span>
+            <span>Free US/UK Tracked Delivery</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🔒</span>
+            <span>256-Bit SSL Encrypted</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Why It Works (Feature Showcase Grid) -->
-    <section>
-      <h2 class="section-heading">Why 10,000+ Customers Replaced Their Droppers</h2>
+    <!-- Why It Works (React Bits Inspired Interactive Spotlight Feature Grid) -->
+    <section class="section-container">
+      <div class="section-badge-center">CLINICAL PRECISION</div>
+      <h2 class="section-heading">Why 10,000+ Customers Replaced Their Glass Droppers</h2>
+      <p class="section-subheading">Eliminate 70% serum waste and deliver nutrient formulas precisely where growth happens.</p>
+      
       <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon-circle">💧</div>
+        <div class="feature-card spotlight-card">
+          <div class="spotlight-layer"></div>
+          <div class="feature-icon-circle">
+            <span class="icon-animated">💧</span>
+          </div>
           <h3>Direct Root Micro-Dosing</h3>
-          <p>Traditional droppers leave 70% of expensive rosemary oil trapped in hair shafts. Our spring-loaded alloy teeth glide smoothly, delivering nutrients directly to the scalp follicles.</p>
+          <p>Traditional droppers leave 70% of expensive rosemary oil trapped in hair shafts. Our spring-loaded alloy teeth glide smoothly, delivering active compounds directly into scalp micro-pores.</p>
+          <div class="card-metric-tag">&gt;90% Absorption Efficiency</div>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon-circle">🔴</div>
+
+        <div class="feature-card spotlight-card">
+          <div class="spotlight-layer"></div>
+          <div class="feature-icon-circle red-glow-circle">
+            <span class="icon-animated">🔴</span>
+          </div>
           <h3>650nm Red Light Diodes</h3>
-          <p>Delivers targeted phototherapy directly through parted hair strands to energize cellular mitochondria and promote a healthier, fuller-looking hair baseline.</p>
+          <p>Delivers targeted phototherapy directly through parted hair strands to stimulate cellular mitochondria, promoting healthy collagen synthesis and an energized follicle environment.</p>
+          <div class="card-metric-tag">Clinical 650nm Wavelength</div>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon-circle">⚡</div>
+
+        <div class="feature-card spotlight-card">
+          <div class="spotlight-layer"></div>
+          <div class="feature-icon-circle">
+            <span class="icon-animated">⚡</span>
+          </div>
           <h3>Micro-Circulation Stimulation</h3>
-          <p>10,000 gentle micro-vibrations per minute soothe scalp rigidity, helping nourish root dermal papilla without irritating sensitive skin.</p>
+          <p>10,000 gentle micro-vibrations per minute soothe scalp tightness, promoting localized micro-vascular bloodflow to nourish dermal papilla without pulling or snagging strands.</p>
+          <div class="card-metric-tag">10,000 RPM Sonic Wave</div>
         </div>
       </div>
     </section>
 
-    <!-- Real Product Demonstration Video Section -->
+    <!-- Real Product Demonstration Video Section (MotionSites Cinematic Stage) -->
     <section class="video-showcase-section">
       <div class="video-container">
         <div class="video-header">
-          <span class="video-pill">Clinical Routine In Action</span>
+          <span class="video-pill">Cinematic Routine In Action</span>
           <h2 class="video-title">See FolliRoot™ In Action</h2>
-          <p class="video-subtitle">Watch how the 3-in-1 device glides through roots, automatically dispensing serums without greasy hands while 650nm clinical red light activates dormant follicles.</p>
+          <p class="video-subtitle">Watch how the 3-in-1 device glides through roots, automatically dispensing serums without greasy fingers while clinical red light phototherapy activates dormant follicles.</p>
         </div>
+        
         <div class="video-wrapper">
+          <div class="video-ambient-glow"></div>
           <video id="product-demo-video" controls autoplay loop muted playsinline poster="assets/images/product-1.jpg">
             <source src="assets/videos/product-demo.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
+
+        <!-- Kinetic Count-Up Stat Blocks -->
         <div class="video-highlights">
           <div class="video-stat">
-            <span class="video-stat-num">100%</span>
+            <div class="stat-num-row">
+              <span class="video-stat-num count-up" data-target="100">100</span><span class="stat-unit">%</span>
+            </div>
             <span class="video-stat-label">Touchless Delivery</span>
           </div>
           <div class="video-stat">
-            <span class="video-stat-num">650nm</span>
+            <div class="stat-num-row">
+              <span class="video-stat-num count-up" data-target="650">650</span><span class="stat-unit">nm</span>
+            </div>
             <span class="video-stat-label">Red Light Therapy</span>
           </div>
           <div class="video-stat">
-            <span class="video-stat-num">10,000</span>
+            <div class="stat-num-row">
+              <span class="video-stat-num count-up" data-target="10000">10,000</span><span class="stat-unit"></span>
+            </div>
             <span class="video-stat-label">Vibrations / Min</span>
           </div>
           <div class="video-stat">
-            <span class="video-stat-num">IPX5</span>
+            <div class="stat-num-row">
+              <span class="video-stat-num">IPX5</span>
+            </div>
             <span class="video-stat-label">Waterproof Easy Clean</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Comparison Table -->
+    <!-- Interactive Comparison Table with Winner Highlights -->
     <section class="comparison-section">
-      <h2 class="section-heading">How FolliRoot Compares</h2>
-      <table class="comp-table">
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th class="comp-highlight">FolliRoot™ 3-in-1</th>
-            <th>Messy Glass Droppers</th>
-            <th>In-Clinic Phototherapy</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Application Cleanliness</strong></td>
-            <td class="comp-highlight">100% Touchless (No greasy hands)</td>
-            <td>Drips on forehead & pillowcases</td>
-            <td>Clean (Administered by technician)</td>
-          </tr>
-          <tr>
-            <td><strong>Serum Absorption Rate</strong></td>
-            <td class="comp-highlight">Direct Follicle Contact (>90%)</td>
-            <td>Trapped in hair strands (~30%)</td>
-            <td>Varies by clinic protocol</td>
-          </tr>
-          <tr>
-            <td><strong>Cost per Treatment</strong></td>
-            <td class="comp-highlight">$39.99 One-Time (Lifetime)</td>
-            <td>$15–$30 (Wasted serum)</td>
-            <td>$90–$150 per session</td>
-          </tr>
-          <tr>
-            <td><strong>Red Light Included</strong></td>
-            <td class="comp-highlight">Yes (650nm Clinical Array)</td>
-            <td>No</td>
-            <td>Yes</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="section-badge-center">THE VERDICT</div>
+      <h2 class="section-heading">How FolliRoot™ Compares</h2>
+      <div class="table-card-wrapper">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th class="comp-highlight">
+                <div class="crown-badge">👑 EDITOR'S CHOICE</div>
+                <span>FolliRoot™ 3-in-1</span>
+              </th>
+              <th>Messy Glass Droppers</th>
+              <th>In-Clinic Phototherapy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Application Cleanliness</strong></td>
+              <td class="comp-highlight"><span class="table-check">✓</span> 100% Touchless (Zero oily hands)</td>
+              <td><span class="table-cross">✗</span> Drips on forehead & pillows</td>
+              <td><span class="table-check">✓</span> Clean (Administered by technician)</td>
+            </tr>
+            <tr>
+              <td><strong>Serum Absorption Rate</strong></td>
+              <td class="comp-highlight"><span class="table-check">✓</span> Direct Follicle Contact (&gt;90%)</td>
+              <td><span class="table-cross">✗</span> Trapped on hair strands (~30%)</td>
+              <td>Varies by clinic protocol</td>
+            </tr>
+            <tr>
+              <td><strong>Cost per Treatment</strong></td>
+              <td class="comp-highlight"><span class="table-check">✓</span> $39.99 One-Time (Lifetime)</td>
+              <td><span class="table-cross">✗</span> $15–$30 wasted serum / mo</td>
+              <td><span class="table-cross">✗</span> $90–$150 per session</td>
+            </tr>
+            <tr>
+              <td><strong>Red Light Phototherapy</strong></td>
+              <td class="comp-highlight"><span class="table-check">✓</span> Built-in 650nm Clinical Array</td>
+              <td><span class="table-cross">✗</span> None</td>
+              <td><span class="table-check">✓</span> Yes</td>
+            </tr>
+            <tr>
+              <td><strong>Daily Convenience</strong></td>
+              <td class="comp-highlight"><span class="table-check">✓</span> 3-Minute At-Home Routine</td>
+              <td>Messy 15-Minute Washup</td>
+              <td>Requires Booking & Travel</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <!-- Interactive FAQ Accordion -->
+    <!-- Interactive FAQ Accordion with Smooth Expansion -->
     <section class="faq-section">
+      <div class="section-badge-center">SUPPORT & CARE</div>
       <h2 class="section-heading">Frequently Asked Questions</h2>
       
       <div class="faq-item active">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="true">
           <span>What type of oils or serums can I use with this device?</span>
-          <span class="faq-toggle-icon">+</span>
-        </div>
+          <span class="faq-toggle-icon">＋</span>
+        </button>
         <div class="faq-answer">
-          You can use any hair wellness liquid, including rosemary essential oil blends (mixed with jojoba/argan carrier oils), peptide density serums, minoxidil topical solutions, or rice water infusions.
+          <p>You can use any hair density or wellness liquid! This includes pure rosemary essential oil blends (diluted with jojoba, castor, or argan carrier oils), peptide density serums, minoxidil topical solutions, stem-cell treatments, or fermented rice water infusions.</p>
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="false">
           <span>How long does shipping take to the US, UK, and Canada?</span>
-          <span class="faq-toggle-icon">+</span>
-        </div>
+          <span class="faq-toggle-icon">＋</span>
+        </button>
         <div class="faq-answer">
-          Orders are processed and dispatched within 24–48 hours. Typical transit time is 6–10 business days to the United States (USPS priority tracked), 5–8 business days to the UK (Royal Mail tracked), and 7–12 business days to Canada. Full door-to-door tracking is emailed immediately upon dispatch.
+          <p>Orders are dispatched from our fulfillment center within 24–48 hours. Typical delivery windows are <strong>5–7 business days to the United States</strong> via USPS priority tracking, <strong>5–8 business days to the United Kingdom</strong> via Royal Mail, and <strong>7–10 business days to Canada & Australia</strong>. A real-time tracking number is sent to your email upon dispatch.</p>
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="false">
           <span>How do I clean the reservoir between different oils?</span>
-          <span class="faq-toggle-icon">+</span>
-        </div>
+          <span class="faq-toggle-icon">＋</span>
+        </button>
         <div class="faq-answer">
-          The comb is IPX5 water-resistant. Simply open the silicone top seal, fill the chamber with warm tap water, shake gently, and press the roller balls over a sink to flush out any residual oil. Allow to air dry for 5 minutes.
+          <p>The comb is IPX5 water-resistant. Simply lift the silicone cap, fill the 6ml reservoir with warm tap water, give it a gentle shake, and press the dispenser roller balls over your sink to flush clean. It dries completely in 5 minutes and is ready for your next treatment.</p>
         </div>
       </div>
 
       <div class="faq-item">
-        <div class="faq-question">
+        <button class="faq-question" aria-expanded="false">
           <span>What if I don't love the device?</span>
-          <span class="faq-toggle-icon">+</span>
-        </div>
+          <span class="faq-toggle-icon">＋</span>
+        </button>
         <div class="faq-answer">
-          We offer an unconditional 30-Day Money-Back Guarantee. If you're not completely satisfied with your experience, contact our care team at support@folliroot.com for a full return and refund.
+          <p>We stand firmly behind our engineering with an unconditional <strong>30-Night Money-Back Guarantee</strong>. If you are not thoroughly satisfied with the quality, feel, or results of your comb, simply reach out to our team at support@folliroot.com for a hassle-free refund.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- Bottom Secondary CTA Card -->
+    <section class="bottom-cta-banner">
+      <div class="bottom-cta-content">
+        <span class="bottom-pill">LIMITED TIME PROMOTION</span>
+        <h2>Experience Scalp Therapy The Way It Was Meant To Be.</h2>
+        <p>Save 43% today with free express delivery and a 30-day risk-free trial.</p>
+        <button class="cta-button trigger-checkout bottom-btn">
+          <span class="cta-label">ORDER YOUR FOLLIROOT™ COMB ($39.99)</span>
+          <span class="cta-arrow">→</span>
+        </button>
       </div>
     </section>
   </main>
 
   <!-- Sticky Bottom Bar for Mobile -->
-  <div id="sticky-mobile-bar" class="sticky-mobile-bar" style="display: none;">
-    <div>
-      <span class="sticky-price">$39.99</span>
-      <span style="font-size:0.75rem; color:var(--text-muted); display:block;">Free US/UK Tracked Delivery</span>
+  <div id="sticky-mobile-bar" class="sticky-mobile-bar">
+    <div class="sticky-info">
+      <span class="sticky-price">$39.99 <span class="sticky-original">$69.99</span></span>
+      <span class="sticky-sub">⚡ Free US/UK Express Delivery</span>
     </div>
-    <button class="sticky-cta trigger-checkout">GET YOUR COMB →</button>
+    <button class="sticky-cta trigger-checkout">GET YOURS →</button>
+  </div>
+
+  <!-- Real-Time Social Proof Toast Notification -->
+  <div id="social-proof-toast" class="social-proof-toast">
+    <div class="toast-avatar">🌿</div>
+    <div class="toast-body">
+      <span class="toast-name">Sarah M. from Austin, TX</span>
+      <span class="toast-action">Ordered 1x FolliRoot™ 3-in-1 Comb <span class="toast-time">3m ago</span></span>
+    </div>
   </div>
 
   <!-- Footer with Legal Compliance Pages -->
   <footer class="site-footer">
     <div class="footer-content">
-      <div>
-        <h4 style="font-family: var(--font-serif); font-size: 1.2rem; color: #FFFFFF; margin-bottom: 8px;">FolliRoot Labs</h4>
-        <p style="max-width: 380px;">Pioneering touchless follicle wellness and clinical-grade scalp phototherapy tools for modern home routines.</p>
-        <p style="margin-top: 12px; color: #9CA3AF;">Operating Address: 51 Global Trade Hub, Bangalore, KA, India</p>
-        <p style="color: #9CA3AF;">Customer Inquiries: support@folliroot.com</p>
+      <div class="footer-brand-col">
+        <div class="footer-logo">
+          <span class="logo-mark">🌿</span>
+          <span class="logo-text">FolliRoot<span class="logo-accent">™</span> LABS</span>
+        </div>
+        <p class="footer-desc">Pioneering touchless follicle wellness and clinical-grade scalp phototherapy tools for modern daily routines.</p>
+        <div class="footer-meta">
+          <p>Operating Address: 51 Global Trade Hub, Bangalore, KA, India</p>
+          <p>Customer Support: <a href="mailto:support@folliroot.com">support@folliroot.com</a></p>
+        </div>
       </div>
-      <div class="footer-links">
-        <h5 style="color: #FFFFFF; margin-bottom: 12px; font-weight: 600;">Legal & Customer Care</h5>
-        <p><a href="legal/contact-us.html" target="_blank">Contact Us & Customer Support</a></p>
-        <p><a href="legal/privacy-policy.html" target="_blank">Privacy Policy (GDPR / CCPA)</a></p>
-        <p><a href="legal/terms-of-service.html" target="_blank">Terms of Service</a></p>
-        <p><a href="legal/shipping-policy.html" target="_blank">Shipping & Delivery Policy</a></p>
-        <p><a href="legal/refund-policy.html" target="_blank">Refund & Return Policy</a></p>
+      <div class="footer-links-col">
+        <h5 class="footer-col-title">Legal & Customer Protection</h5>
+        <ul class="footer-link-list">
+          <li><a href="legal/contact-us.html" target="_blank">Contact Us & Support Desk</a></li>
+          <li><a href="legal/privacy-policy.html" target="_blank">Privacy Policy (GDPR / CCPA)</a></li>
+          <li><a href="legal/terms-of-service.html" target="_blank">Terms of Service</a></li>
+          <li><a href="legal/shipping-policy.html" target="_blank">Shipping & Delivery Policy</a></li>
+          <li><a href="legal/refund-policy.html" target="_blank">Refund & 30-Day Return Policy</a></li>
+        </ul>
       </div>
     </div>
-    <div style="text-align: center; margin-top: 32px; border-top: 1px solid #2B3830; padding-top: 20px; color: #6B7280; font-size: 0.75rem;">
-      © 2026 FolliRoot Labs. All rights reserved. Statements on this site have not been evaluated by the FDA. Products are not intended to diagnose, treat, cure, or prevent any disease.
+    <div class="footer-bottom-bar">
+      © 2026 FolliRoot Labs. All rights reserved. Statements on this site have not been evaluated by the FDA. Products are not intended to diagnose, treat, cure, or prevent any medical condition.
     </div>
   </footer>
 
