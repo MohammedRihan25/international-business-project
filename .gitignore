@@ -9,3 +9,6 @@ __pycache__/
 *.pyc
 .env
 .netlify/
+
+# Separate projects
+agency-launch/
