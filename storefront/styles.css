@@ -2145,3 +2145,388 @@ body {
   line-height: 1.5;
   text-align: center;
 }
+
+/* =======================================================
+   MOBILE-FIRST PERFECTION & ULTRA-RESPONSIVE SUITE
+   ======================================================= */
+@media (max-width: 768px) {
+  .container {
+    padding: 12px 14px 120px; /* 120px clearance ensures sticky bar never covers content */
+  }
+
+  .navbar {
+    padding: 10px 14px;
+  }
+
+  .logo-text {
+    font-size: 1.15rem;
+  }
+
+  .nav-cta-btn {
+    padding: 6px 14px;
+    font-size: 0.78rem;
+  }
+
+  .section-container {
+    margin: 48px 0;
+  }
+
+  .section-heading {
+    font-size: 1.65rem;
+    line-height: 1.25;
+    margin-bottom: 8px;
+  }
+
+  .section-subheading {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 22px;
+  }
+
+  /* Product Hero on Mobile */
+  .product-hero {
+    gap: 22px;
+    margin-bottom: 36px;
+  }
+
+  .main-image-wrap {
+    max-height: 330px;
+    aspect-ratio: 1 / 1;
+    border-radius: 18px;
+    margin: 0 auto;
+  }
+
+  .red-light-aura {
+    width: 220px;
+    height: 220px;
+  }
+
+  .red-light-ripple {
+    width: 260px;
+    height: 260px;
+  }
+
+  .main-product-img {
+    width: 82%;
+    height: 82%;
+  }
+
+  .product-hero-badge {
+    top: 10px;
+    left: 10px;
+    padding: 4px 10px;
+    font-size: 0.68rem;
+  }
+
+  .magnify-hint {
+    display: none !important;
+  }
+
+  .thumbnail-row {
+    gap: 8px;
+    padding: 4px 2px;
+  }
+
+  .thumbnail-item {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+  }
+
+  .product-title {
+    font-size: 1.75rem;
+    line-height: 1.22;
+  }
+
+  .product-subtitle {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .pricing-card {
+    padding: 12px 14px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .current-price {
+    font-size: 1.85rem;
+  }
+
+  .original-price {
+    font-size: 1.1rem;
+  }
+
+  .pricing-pill {
+    font-size: 0.72rem;
+    padding: 4px 8px;
+  }
+
+  .mode-selector-block {
+    padding: 14px 12px;
+  }
+
+  .mode-pill-row {
+    gap: 6px;
+  }
+
+  .mode-btn {
+    padding: 8px 4px;
+    gap: 4px;
+  }
+
+  .mode-btn .mode-icon {
+    font-size: 1.1rem;
+  }
+
+  .mode-btn .mode-text {
+    font-size: 0.64rem;
+  }
+
+  .mode-description-box {
+    font-size: 0.8rem;
+    padding: 10px 12px;
+  }
+
+  .delivery-estimate-card {
+    padding: 12px 14px;
+    font-size: 0.82rem;
+  }
+
+  .stock-indicator {
+    font-size: 0.8rem;
+  }
+
+  .delivery-date-row {
+    font-size: 0.8rem;
+  }
+
+  .feature-checklist li {
+    font-size: 0.86rem;
+    gap: 10px;
+  }
+
+  .cta-button {
+    padding: 16px 20px;
+    font-size: 0.95rem;
+    border-radius: 30px;
+  }
+
+  /* Laser Depth Penetration on Mobile */
+  .anatomy-visual-card {
+    padding: 16px 14px;
+    border-radius: 18px;
+  }
+
+  .anatomy-diagram-header {
+    font-size: 0.68rem;
+    margin-bottom: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .layer-info {
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+    margin-bottom: 6px;
+  }
+
+  .depth-marker {
+    font-size: 0.7rem;
+  }
+
+  .layer-title {
+    font-size: 0.74rem;
+  }
+
+  .fail-tag, .success-tag, .circulation-flow-marker {
+    font-size: 0.78rem;
+    line-height: 1.4;
+  }
+
+  .skin-layer {
+    padding: 12px 12px;
+  }
+
+  .depth-legend-bar {
+    margin-top: 14px;
+    padding-top: 12px;
+    gap: 8px;
+  }
+
+  .legend-val {
+    font-size: 1.15rem;
+  }
+
+  .legend-lbl {
+    font-size: 0.64rem;
+  }
+
+  .spec-block {
+    padding: 14px 14px;
+    border-radius: 14px;
+    gap: 12px;
+  }
+
+  .spec-num {
+    font-size: 1.1rem;
+  }
+
+  .spec-details h4 {
+    font-size: 0.92rem;
+  }
+
+  .spec-details p {
+    font-size: 0.82rem;
+  }
+
+  /* Before / After Slider on Mobile */
+  .ba-slider-container {
+    min-height: 240px;
+    aspect-ratio: 4 / 3;
+    border-radius: 18px;
+  }
+
+  .ba-badge {
+    font-size: 0.64rem;
+    padding: 4px 8px;
+    border-radius: 12px;
+    max-width: 130px;
+    line-height: 1.25;
+    top: 10px;
+  }
+
+  .before-badge {
+    right: 10px;
+  }
+
+  .after-badge {
+    left: 10px;
+  }
+
+  .handle-circle {
+    width: 36px;
+    height: 36px;
+    font-size: 0.7rem;
+  }
+
+  .ba-metric-pill {
+    padding: 10px 12px;
+    font-size: 0.78rem;
+  }
+
+  .ba-metric-pill .metric-num {
+    font-size: 1.1rem;
+  }
+
+  /* Personalized Protocol Calculator on Mobile */
+  .protocol-calculator-box {
+    padding: 20px 14px;
+    border-radius: 18px;
+  }
+
+  .step-label {
+    font-size: 0.72rem;
+    margin-bottom: 8px;
+  }
+
+  .chip {
+    padding: 7px 12px;
+    font-size: 0.76rem;
+    border-radius: 20px;
+  }
+
+  .protocol-output-card {
+    padding: 16px 14px;
+    border-radius: 14px;
+  }
+
+  .output-header {
+    gap: 6px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .output-target {
+    font-size: 0.92rem;
+  }
+
+  .output-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .output-stat {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .output-cta-row {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  #output-summary-text {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .protocol-cta-btn {
+    max-width: 100%;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 0.86rem;
+  }
+
+  /* Video & Comparison Table on Mobile */
+  .video-container {
+    padding: 24px 14px;
+    border-radius: 20px;
+  }
+
+  .video-title {
+    font-size: 1.65rem;
+  }
+
+  .video-stat {
+    padding: 12px 8px;
+  }
+
+  .video-stat-num {
+    font-size: 1.4rem;
+  }
+
+  .table-card-wrapper {
+    overflow-x: auto;
+    border-radius: 16px;
+  }
+
+  .comp-table th, .comp-table td {
+    padding: 10px 12px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  /* Bottom CTA Banner on Mobile */
+  .bottom-cta-banner {
+    padding: 36px 18px;
+    border-radius: 20px;
+    margin: 48px 0 20px;
+  }
+
+  .bottom-cta-banner h2 {
+    font-size: 1.65rem;
+  }
+
+  .bottom-cta-banner p {
+    font-size: 0.92rem;
+  }
+}
