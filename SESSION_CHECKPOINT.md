@@ -1,5 +1,5 @@
 # SESSION CHECKPOINT
-**Last Saved:** November 27, 2026 | 21:38 IST  
+**Last Saved:** November 27, 2026 | 21:50 IST  
 **Project:** Global Dropship HQ (FolliRoot™ Labs) & ApexLeads AI  
 **Location:** C:\Users\muham\Documents\jarvis\job-hunter  
 **GitHub Repository:** https://github.com/MohammedRihan25/international-business-project.git  
@@ -8,10 +8,11 @@
 
 ### 🏆 Current Completed State:
 
-1. **FolliRoot™ Labs — Cinematic Luxury Dark Theme & Interactive Modules Deployed:**
+1. **FolliRoot™ Labs — Cinematic Luxury Dark Theme & Mobile-First Precision Live:**
    - **Production URLs:**
      * GitHub Pages: `https://mohammedrihan25.github.io/international-business-project/`
      * Netlify: `https://folliroot-labs.netlify.app/`
+   - **Mobile-First Layout Perfection:** Fixed mobile viewport squishing, scaled down oversized hero imagery (330px max-height), compact touchable 52px thumbnails, eliminated line collisions on 650nm laser depth markers, adapted Before/After reveal badges to prevent clipping on 390px screens, transformed protocol calculator output into spacious stacked cards, and added 120px bottom clearance to prevent the sticky checkout bar from overlapping content.
    - **Ultra-Luxury Obsidian Dark Aesthetic:** Deep space obsidian palette (`#06090F`), frosted glassmorphic cards (`rgba(15, 23, 42, 0.75)`), glowing 650nm crimson ambient rings, and Apple Pro level typography.
    - **Duplicate Photo Correction:** Extracted crisp, 1080p high-resolution action frames from `product-demo.mp4` to replace duplicate bundle photos (`product-6.jpg` now shows precision reservoir filling, `product-7.jpg` shows active sonic scalp massage in motion). All 7 thumbnails are 100% unique.
    - **650nm Laser Depth Penetration Scanner:** Interactive clinical anatomy cross-section showing Epidermis (0mm) vs Dermis (4mm root bulb) with animated 650nm laser beam arrays and localized bloodflow perfusion.
